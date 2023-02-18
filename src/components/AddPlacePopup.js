@@ -9,6 +9,12 @@ export default function AddPlacePopup({
     const [name, setName] = useState('');
     const [link, setLink] = useState('');
 
+    React.useEffect(() => {
+        setName('');
+        setLink('');
+    }, [isOpen]);
+
+
     function handleNameChange(e) {
         setName(e.target.value);
     }
@@ -39,6 +45,7 @@ export default function AddPlacePopup({
                 maxLength="30"
                 required
                 onChange={handleNameChange}
+                value={name || ""}
             />
             <span className="popup__span-error popup__span-error_card_name"></span>
             <input
@@ -48,6 +55,7 @@ export default function AddPlacePopup({
                 placeholder="Ссылка на картинку"
                 required
                 onChange={handleLinkChange}
+                value={link || ""}
             />
             <span className="popup__span-error popup__span-error_card_link"></span>
         </PopupWithForm>

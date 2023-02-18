@@ -12,7 +12,6 @@ class ApiAuth {
     _handleFetch(fetch) {
         return fetch
             .then(res => res.ok ? res.json() : Promise.reject(new Error(res.status)))
-            .catch(err => Promise.reject(err))
     }
 
     signup(email, password) {

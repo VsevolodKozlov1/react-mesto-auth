@@ -87,7 +87,10 @@ function App() {
         setIsLoggedIn(true);
         setEmail(data.data.email);
         navigate("/");
-      });
+      })
+      .catch(err => {
+        alert(`Что-то пошло не так! ${err}`);
+      })
     }
   }
 
