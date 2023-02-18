@@ -12,4 +12,4 @@ React.js:
 
 CSS-стили написаны в соответствии с БЭМ-подходом, файловая структура проекта также оформлена по правилам Nested БЭМ.
 
-Проект на GitHub Pages: https://vsevolodkozlov1.github.io/mesto-react/
+Проект на GitHub Pages: https://vsevolodkozlov1.github.io/react-mesto-auth/
